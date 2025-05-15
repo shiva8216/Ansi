@@ -1,10 +1,10 @@
-- name: remove nginx
+- name: remove the nginx package
   host: web
   become: yes
   tasks:
-    -name:  remove nginx
+    -name:  remove the nginx
     ansible.builtin.package:
-    name: nginx
-    state: Absent
+    name: "{{nginx}}"
+    state: absent
 
 

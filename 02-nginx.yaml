@@ -2,7 +2,8 @@
   hosts: web
   become: yes  #its root acces to install
   tasks:
-  - name: uninstall nginx
+  - name: install nginx
     ansible.builtin.package:
         name: nginx
-        state : absent
+        state : present
+        

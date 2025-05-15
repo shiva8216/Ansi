@@ -1,6 +1,4 @@
-  hosts: web
-  become: yes
-
-  ansible.builtin.package:
-      pkg: nginx
-      state: absent
+- name: Remove package 'nginx'
+  dnf:
+    name: nginx
+    state: absent

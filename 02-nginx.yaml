@@ -1,4 +1,4 @@
-- name: install
+- name: uninstall and remove nginx
   hosts: web
   become: yes
 

@@ -1,5 +1,5 @@
 - name: install
-  host: web
+  hosts: web
   become: yes
   tasks:
     - name: Remove the nginx package

@@ -1,8 +1,8 @@
-- name: uninstall nginx
+- name: remove nginx
   host: web
   become: yes
   tasks:
-    -name:  uninstall nginx
+    -name:  remove nginx
     ansible.builtin.package:
     name: nginx
     state: Absent

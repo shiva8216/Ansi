@@ -1,4 +1,8 @@
-- name: Remove package 'nginx'
-  dnf:
-    name: nginx
-    state: absent
+- name: install and run nginx
+  hosts: web
+  become: yes  #its root acces to install
+  tasks:
+  - name: uninstall nginx
+    ansible.builtin.package:
+        name: nginx
+        state : absent

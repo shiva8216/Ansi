@@ -1,8 +1,8 @@
 - name: variables
   hosts: local
   connection: local
-  vars: #PLAY level variables, global variables
-    COURSE: "DevOps and Ansible"
+  vars: # PLAY level variables, global variables
+    COURSE: "DevOps and linux"
     DURATION: 120hRS
     TRAINER: Shiva
   tasks:

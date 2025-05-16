@@ -2,13 +2,12 @@
   hosts:  local
   connection: local
   vars_prompt:
-    - name: COURSE
+    - name:  COURSE
       prompt: Please enter course name
     - name: DURATION
       prompt: Please enter duration name
     - name: TRAINER
       prompt: please enter Trainer name
-
       tasks:
     - name : print course information
       ansible.builtin.debug:

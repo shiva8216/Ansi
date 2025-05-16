@@ -1,6 +1,8 @@
 - name: variables
   hosts: local
   connection: local
+  vars_files:
+   - course.yaml
   vars: # PLAY level variables, global variables
     COURSE: "DevOps and linux"
     DURATION: 120hRS
@@ -13,7 +15,7 @@
        msg:  "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
 
     - name: print the variable1
-      vars_files:
+        vars_files:
       - course.yaml
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"

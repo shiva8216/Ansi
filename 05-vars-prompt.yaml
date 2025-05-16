@@ -2,7 +2,7 @@
   hosts:  local
   connection: local
   vars_prompt:
-    - name:  COURSE
+    - name: COURSE
       prompt: Please enter course name
     - name: DURATION
       prompt: Please enter duration name

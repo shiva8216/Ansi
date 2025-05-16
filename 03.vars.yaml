@@ -17,7 +17,7 @@
      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
 
   - name: Print the variable2
-    vars_files
+    vars_files:
   - course.yaml
     ansible.builtin.debug:
      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"

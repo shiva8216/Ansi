@@ -9,14 +9,12 @@
   - name: Print the variable
     COURSE: Ansible
     ansible.builtin.debug:
-      msg:"Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
 
   - name: print the variable1
     ansible.builtin.debug:
-      msg:"Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
 
   - name: Print the variable2
-    vars_files:
-    - course.yaml
     ansible.builtin.debug:
-      msg:"Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"

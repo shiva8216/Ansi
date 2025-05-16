@@ -6,7 +6,7 @@
     DURATION: 120hRS
     TRAINER: Shiva
   tasks:
-    - name: print the variable
+    - name: print the variables
       vars:
         COURSE: Ansible
       ansible.builtin.debug:

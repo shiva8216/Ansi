@@ -15,3 +15,10 @@
   - name: print the variable1
     ansible.builtin.debug:
      msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+  - name: print the variable2
+    COURSE: RHEL
+    DURATION: 2MONTHS
+    TRAINER: MALLIKARJUN
+    ansible.builtin.debug:
+     msg: "Course is {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"

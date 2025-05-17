@@ -3,8 +3,8 @@
     hosts: frontend
     become: yes  #its root acces to install
     tasks:
-  - name: install nginx
-    ansible.builtin.package:
+    - name: install nginx
+      ansible.builtin.package:
         name: nginx
         state : present
 

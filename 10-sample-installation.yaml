@@ -1,0 +1,12 @@
+- name:  Ansible Installation
+  hosts: local
+  connection: local
+
+- name: Install Ansible package
+  ansible.builtin.package:
+  name: Ansible
+  state: present
+  
+
+
+  

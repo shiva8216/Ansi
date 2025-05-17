@@ -1,10 +1,9 @@
-
-  - name: install and run nginx
-    hosts: frontend
-    become: yes  #its root acces to install
-    tasks:
-    - name: install nginx
-      ansible.builtin.package:
+- name: install and run nginx
+  hosts: frontend
+  become: yes  #its root acces to install
+  tasks:
+  - name: install nginx
+    ansible.builtin.package:
         name: nginx
         state : present
 

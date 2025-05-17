@@ -3,4 +3,4 @@
   tasks:
    - name: print the facts
      ansible.builtin.debug:
-      msg: "{{ os_family }}"
+      msg: "{{ ansible_os_family }}"

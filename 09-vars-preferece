@@ -1,6 +1,6 @@
 - name: variables
   hosts: local
-  #connection: local
+  connection: local
   vars: # Play level variables
     GREET: "from play"
   vars_files:
@@ -11,8 +11,8 @@
     private: false
   tasks:
   - name: print the variable
-    #vars:
-      #GREET: "TASK"
+    vars:
+      GREET: "TASK"
     ansible.builtin.debug:
        msg: "Hello from {{ GREET }}"
 

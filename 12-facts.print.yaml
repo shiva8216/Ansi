@@ -3,4 +3,4 @@
   tasks:
    - name: print the facts
      ansible.builtin.debug:
-      msg: "{{ diskusage }}"
+      msg: "{{ os_family }}"

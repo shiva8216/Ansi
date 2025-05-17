@@ -4,9 +4,9 @@
 
 - name: Install Ansible package
   ansible.builtin.package:
-  name: Ansible
-  state: present
-  
+    name: Ansible
+    state: absent
+
 
 
   

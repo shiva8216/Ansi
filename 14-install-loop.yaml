@@ -1,0 +1,16 @@
+- name: install packages
+  hosts: frontend
+  bcome: yes
+
+  tasks:
+    - name: install packages
+      ansible.builtin.package:
+         name: "{{ item }}"
+         state: installed
+
+      loop:
+      - gcc
+      - mysql
+      - git
+      - zip
+      

@@ -5,7 +5,7 @@
   - name: execute ls command
     #ansible.builtin.command: ls -ltr > /tmp/output.txt
     #ansible.builtin.shell: ls -ltr > /tmp/output.txt
-    #ansible.builtin.shell: df -h > /tmp/df.txt
+    ansible.builtin.shell: df -h > /tmp/df1.txt
     ansible.builtin.command: df -h
     register: command_result
 

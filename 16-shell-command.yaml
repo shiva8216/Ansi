@@ -7,7 +7,7 @@
     #ansible.builtin.shell: ls -ltr > /tmp/output.txt
     ansible.builtin.shell: df -h > /tmp/df1.txt
     #ansible.builtin.command: df -h
-    register: command_result
+    #register: command_result
 
   - name: Print the output
     ansible.builtin.debug:

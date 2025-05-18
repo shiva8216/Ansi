@@ -1,6 +1,12 @@
-- name : shell vs command
+- name: loops
   hosts: local
   connection: local
   tasks:
-  - name: excute ls command
-    ansible.builtin.command: ls -ltr > /var/tmp/output.txt
+    - name: Print names
+      ansible.builtin.debug:
+         msg: "Hello {{ item }}"
+
+      loop:
+      - shivudu
+      - chinnu
+      - kannaya

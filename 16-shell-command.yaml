@@ -3,8 +3,8 @@
   connection : local
   tasks:
   - name: execute ls command
-    ansible.builtin.command: ls -ltr
-    #ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    #ansible.builtin.command: ls -ltr
+    ansible.builtin.shell: mkdir /mallik ,cd  /mallik ,touch file1 , ls -ltr > /tmp/output.txt
     #ansible.builtin.shell: df -h > /tmp/df1.txt
     #ansible.builtin.command: mkdir /mallik
     register: command_result

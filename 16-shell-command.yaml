@@ -3,7 +3,7 @@
   connection : local
   tasks:
   - name: execute ls command
-    #ansible.builtin.command: ls -ltr
+    #ansible.builtin.command: ls -ltr #redirectories not vork vith command mode because , shell needs to excute ....import
     ansible.builtin.shell: mkdir /shiva  ;cd  /shiva ; touch file1 ; ls -ltr > /tmp/output1.txt
     #ansible.builtin.shell: df -h > /tmp/df1.txt
     #ansible.builtin.command: mkdir /mallik

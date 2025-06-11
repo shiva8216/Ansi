@@ -1,6 +1,6 @@
 - name: nginx installation
   hosts: local
-  hosts: web
+  #hosts: web
   become: yes
   serial: 10
   tasks:
